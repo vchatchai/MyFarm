@@ -1,1 +1,56 @@
-[]
+[
+    {
+        "id": "3c8d7c4563309a99",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35ba80d5d4528d19",
+        "type": "mqtt-broker",
+        "name": "MyFarm",
+        "broker": "192.168.0.10",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cdcc4ed9e104a50a",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve01/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    }
+]
