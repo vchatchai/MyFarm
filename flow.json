@@ -128,5 +128,28 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "3b74978eb6dcc1a5",
+        "type": "node-line-notify",
+        "z": "3c8d7c4563309a99",
+        "name": "MyFarm",
+        "message": "Hi, this message is from LINE Notify. 😊",
+        "useExternalData": true,
+        "useImageUrl": false,
+        "imageFullsizeUrl": "",
+        "imageThumbnailUrl": "",
+        "useImageFile": false,
+        "imageFile": "",
+        "useSticker": false,
+        "lineStickerPackageId": 1,
+        "lineStickerId": 1,
+        "disabledPushNotification": false,
+        "hasToken": true,
+        "x": 1160,
+        "y": 480,
+        "wires": [
+            []
+        ]
     }
 ]
