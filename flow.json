@@ -52,5 +52,24 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b6f858d1af7df909",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve02/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
