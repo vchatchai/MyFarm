@@ -375,10 +375,10 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{{payload}}",
+        "template": "{\n    \"Name\": \"Valve05\",\n    \"NodeID\": \"ui\",\n    \"Power\": {{payload}}\n\n}",
         "output": "str",
         "x": 980,
-        "y": 280,
+        "y": 300,
         "wires": [
             [
                 "8d786ba66c2788c9"
