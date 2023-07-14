@@ -193,7 +193,9 @@
         "x": 250,
         "y": 280,
         "wires": [
-            []
+            [
+                "49b56851ca77f317"
+            ]
         ]
     },
     {
@@ -290,8 +292,8 @@
         "correl": "",
         "expiry": "",
         "broker": "35ba80d5d4528d19",
-        "x": 1080,
-        "y": 320,
+        "x": 1200,
+        "y": 680,
         "wires": []
     },
     {
@@ -331,8 +333,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 590,
-        "y": 60,
+        "x": 910,
+        "y": 360,
         "wires": [
             [
                 "02ac8c276b3d580a",
@@ -360,8 +362,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 590,
-        "y": 120,
+        "x": 530,
+        "y": 440,
         "wires": [
             [
                 "02ac8c276b3d580a",
@@ -416,6 +418,25 @@
         "wires": [
             [
                 "fac3cddf9c9daf69"
+            ]
+        ]
+    },
+    {
+        "id": "49b56851ca77f317",
+        "type": "template",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.Power}}",
+        "output": "str",
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "5bab2e19ff7e6131"
             ]
         ]
     }
