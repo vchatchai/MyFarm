@@ -363,7 +363,8 @@
         "wires": [
             [
                 "5bab2e19ff7e6131",
-                "4c17a232d27d16ea"
+                "4c17a232d27d16ea",
+                "a02a5572d9982f40"
             ]
         ]
     },
@@ -438,5 +439,39 @@
         "x": 640,
         "y": 20,
         "wires": []
+    },
+    {
+        "id": "a02a5572d9982f40",
+        "type": "ui_switch",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "b4a04d661a72816d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "2",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "96dbab7168f8286e"
+            ]
+        ]
     }
 ]
