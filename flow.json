@@ -363,7 +363,8 @@
         "wires": [
             [
                 "5bab2e19ff7e6131",
-                "4c17a232d27d16ea"
+                "4c17a232d27d16ea",
+                "3d0a4a3c970c1f0f"
             ]
         ]
     },
@@ -437,6 +438,37 @@
         "statusType": "auto",
         "x": 680,
         "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3d0a4a3c970c1f0f",
+        "type": "ui_led",
+        "z": "3c8d7c4563309a99",
+        "order": 1,
+        "group": "b4a04d661a72816d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 670,
+        "y": 140,
         "wires": []
     }
 ]
