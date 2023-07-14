@@ -407,7 +407,7 @@
         "type": "function",
         "z": "3c8d7c4563309a99",
         "name": "setTopic",
-        "func": "msg.topic.replace(\"status\", \"control\")\nreturn msg;",
+        "func": "msg.topic = msg.topic.replace(\"status\", \"control\")\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
