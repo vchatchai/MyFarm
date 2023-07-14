@@ -370,18 +370,18 @@
         "id": "96dbab7168f8286e",
         "type": "template",
         "z": "3c8d7c4563309a99",
-        "name": "",
+        "name": "template body",
         "field": "payload",
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
         "template": "{\n    \"Name\": {{topic}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n\n}",
         "output": "str",
-        "x": 980,
-        "y": 300,
+        "x": 940,
+        "y": 340,
         "wires": [
             [
-                "8d786ba66c2788c9"
+                "ea13fb3ce140d373"
             ]
         ]
     },
@@ -394,11 +394,31 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 1220,
-        "y": 340,
+        "y": 400,
         "wires": []
+    },
+    {
+        "id": "ea13fb3ce140d373",
+        "type": "function",
+        "z": "3c8d7c4563309a99",
+        "name": "setTopic",
+        "func": "msg.topic.replace(\"status\", \"control\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 280,
+        "wires": [
+            [
+                "8d786ba66c2788c9"
+            ]
+        ]
     }
 ]
