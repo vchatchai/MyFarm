@@ -518,8 +518,8 @@
         "z": "3c8d7c4563309a99",
         "name": "MyFarm",
         "topic": "",
-        "qos": "",
-        "retain": "",
+        "qos": "1",
+        "retain": "true",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
@@ -593,6 +593,120 @@
             [
                 "ddfda6b0d3aea13e"
             ]
+        ]
+    },
+    {
+        "id": "81c9da993ff23518",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve06/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1929af4128e1bbf7",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve07/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2a981952ddd3d84",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve08/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a7f68492a562e20",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve09/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b6df844335a4d23",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve10/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b567ac38467cebf0",
+        "type": "mqtt in",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "topic": "/topic/node/valve11/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35ba80d5d4528d19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 740,
+        "wires": [
+            []
         ]
     }
 ]
