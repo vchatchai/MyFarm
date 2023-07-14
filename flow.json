@@ -321,8 +321,8 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "passthru": false,
-        "decouple": "true",
+        "passthru": true,
+        "decouple": "false",
         "topic": "topic",
         "topicType": "msg",
         "style": "",
@@ -362,10 +362,10 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "etest",
         "payload": "true",
         "payloadType": "bool",
-        "x": 550,
+        "x": 560,
         "y": 200,
         "wires": [
             [
