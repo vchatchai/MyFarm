@@ -18,7 +18,7 @@
     {
         "id": "e23b4438cca5e5eb",
         "type": "subflow",
-        "name": "Subflow 1",
+        "name": "Control",
         "info": "",
         "category": "",
         "in": [
