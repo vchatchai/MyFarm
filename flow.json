@@ -193,8 +193,8 @@
         "y": 280,
         "wires": [
             [
-                "9baf1e9a6cbbb54e",
-                "02ac8c276b3d580a"
+                "02ac8c276b3d580a",
+                "4f2958172dac46a7"
             ]
         ]
     },
@@ -343,6 +343,39 @@
         "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c70bf39739477128",
+        "type": "json",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f2958172dac46a7",
+        "type": "function",
+        "z": "3c8d7c4563309a99",
+        "name": "function 1",
+        "func": "\nreturn msg.payload.Power;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "9baf1e9a6cbbb54e"
+            ]
         ]
     }
 ]
