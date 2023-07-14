@@ -312,40 +312,6 @@
         "wires": []
     },
     {
-        "id": "9baf1e9a6cbbb54e",
-        "type": "ui_switch",
-        "z": "3c8d7c4563309a99",
-        "name": "Test",
-        "label": "Test",
-        "tooltip": "",
-        "group": "b4a04d661a72816d",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "{}",
-        "onvalueType": "json",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "{}",
-        "offvalueType": "json",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 870,
-        "y": 160,
-        "wires": [
-            [
-                "fac3cddf9c9daf69"
-            ]
-        ]
-    },
-    {
         "id": "98185bedc4d4c081",
         "type": "ui_button",
         "z": "3c8d7c4563309a99",
@@ -369,7 +335,6 @@
         "y": 60,
         "wires": [
             [
-                "9baf1e9a6cbbb54e",
                 "02ac8c276b3d580a",
                 "5bab2e19ff7e6131"
             ]
@@ -399,7 +364,6 @@
         "y": 120,
         "wires": [
             [
-                "9baf1e9a6cbbb54e",
                 "02ac8c276b3d580a",
                 "5bab2e19ff7e6131"
             ]
