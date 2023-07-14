@@ -272,7 +272,7 @@
         "lineStickerId": 1,
         "disabledPushNotification": false,
         "hasToken": true,
-        "x": 1080,
+        "x": 1060,
         "y": 500,
         "wires": [
             []
@@ -297,81 +297,6 @@
         "wires": []
     },
     {
-        "id": "02ac8c276b3d580a",
-        "type": "debug",
-        "z": "3c8d7c4563309a99",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "98185bedc4d4c081",
-        "type": "ui_button",
-        "z": "3c8d7c4563309a99",
-        "name": "",
-        "group": "b4a04d661a72816d",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button true",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 910,
-        "y": 360,
-        "wires": [
-            [
-                "02ac8c276b3d580a",
-                "5bab2e19ff7e6131"
-            ]
-        ]
-    },
-    {
-        "id": "1a14f623b8e4b32c",
-        "type": "ui_button",
-        "z": "3c8d7c4563309a99",
-        "name": "",
-        "group": "b4a04d661a72816d",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button false",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 530,
-        "y": 440,
-        "wires": [
-            [
-                "02ac8c276b3d580a",
-                "5bab2e19ff7e6131"
-            ]
-        ]
-    },
-    {
         "id": "fac3cddf9c9daf69",
         "type": "debug",
         "z": "3c8d7c4563309a99",
@@ -383,7 +308,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
+        "x": 1200,
         "y": 160,
         "wires": []
     },
@@ -417,7 +342,8 @@
         "y": 200,
         "wires": [
             [
-                "fac3cddf9c9daf69"
+                "fac3cddf9c9daf69",
+                "96dbab7168f8286e"
             ]
         ]
     },
@@ -425,20 +351,54 @@
         "id": "14d72b0f763ce863",
         "type": "function",
         "z": "3c8d7c4563309a99",
-        "name": "function 1",
+        "name": "prepare status",
         "func": "msg.payload = msg.payload.Power == 1; \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 620,
+        "y": 200,
+        "wires": [
+            [
+                "5bab2e19ff7e6131"
+            ]
+        ]
+    },
+    {
+        "id": "96dbab7168f8286e",
+        "type": "template",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{{payload}}",
+        "output": "str",
+        "x": 980,
         "y": 280,
         "wires": [
             [
-                "5bab2e19ff7e6131",
-                "02ac8c276b3d580a"
+                "8d786ba66c2788c9"
             ]
         ]
+    },
+    {
+        "id": "8d786ba66c2788c9",
+        "type": "debug",
+        "z": "3c8d7c4563309a99",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 340,
+        "wires": []
     }
 ]
