@@ -192,7 +192,9 @@
         "x": 250,
         "y": 280,
         "wires": [
-            []
+            [
+                "9baf1e9a6cbbb54e"
+            ]
         ]
     },
     {
@@ -325,12 +327,12 @@
         "topic": "topic",
         "topicType": "msg",
         "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
+        "onvalue": "msg.payload.Power",
+        "onvalueType": "json",
         "onicon": "",
         "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
+        "offvalue": "msg.payload.Power",
+        "offvalueType": "json",
         "officon": "",
         "offcolor": "",
         "animate": false,
