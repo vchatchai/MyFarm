@@ -292,8 +292,8 @@
         "correl": "",
         "expiry": "",
         "broker": "35ba80d5d4528d19",
-        "x": 1240,
-        "y": 280,
+        "x": 1220,
+        "y": 200,
         "wires": []
     },
     {
@@ -399,8 +399,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1240,
-        "y": 200,
+        "x": 1100,
+        "y": 60,
         "wires": []
     },
     {
