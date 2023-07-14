@@ -456,7 +456,7 @@
         "topic": "topic",
         "topicType": "msg",
         "style": "",
-        "onvalue": true,
+        "onvalue": "1",
         "onvalueType": "num",
         "onicon": "",
         "oncolor": "",
