@@ -338,8 +338,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 650,
-        "y": 200,
+        "x": 670,
+        "y": 140,
         "wires": [
             [
                 "fac3cddf9c9daf69",
@@ -352,7 +352,7 @@
         "type": "function",
         "z": "3c8d7c4563309a99",
         "name": "prepare status",
-        "func": "msg.payload = msg.payload.Power == 1; \nreturn msg;",
+        "func": "msg.payload = msg.payload.Power ; \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
