@@ -351,7 +351,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "enabled ",
+                "v": "true",
+                "vt": "bool"
             },
             {
                 "p": "topic",
@@ -363,9 +365,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "etest",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 560,
+        "x": 550,
         "y": 200,
         "wires": [
             [
