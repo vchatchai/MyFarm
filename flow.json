@@ -16,9 +16,42 @@
         "env": []
     },
     {
+        "id": "e23b4438cca5e5eb",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "14d72b0f763ce863"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 940,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "ea13fb3ce140d373",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "441ba1362d002e1d",
         "type": "group",
-        "z": "3c8d7c4563309a99",
+        "z": "e23b4438cca5e5eb",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -33,12 +66,55 @@
             "14d72b0f763ce863",
             "96dbab7168f8286e",
             "ea13fb3ce140d373",
-            "3d0a4a3c970c1f0f"
+            "3d0a4a3c970c1f0f",
+            "5b40faaacfd77364",
+            "f02fc8323b4ab41e",
+            "9a33f73fe8d30a5a"
         ],
-        "x": 394,
-        "y": 99,
+        "x": 174,
+        "y": 239,
         "w": 712,
         "h": 142
+    },
+    {
+        "id": "5b40faaacfd77364",
+        "type": "junction",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "5bab2e19ff7e6131",
+                "3d0a4a3c970c1f0f"
+            ]
+        ]
+    },
+    {
+        "id": "f02fc8323b4ab41e",
+        "type": "junction",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "96dbab7168f8286e"
+            ]
+        ]
+    },
+    {
+        "id": "9a33f73fe8d30a5a",
+        "type": "junction",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "ea13fb3ce140d373"
+            ]
+        ]
     },
     {
         "id": "35ba80d5d4528d19",
@@ -184,6 +260,131 @@
         "className": ""
     },
     {
+        "id": "5bab2e19ff7e6131",
+        "type": "ui_switch",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "name": "",
+        "label": "{{name}}",
+        "tooltip": "",
+        "group": "b4a04d661a72816d",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "f02fc8323b4ab41e"
+            ]
+        ]
+    },
+    {
+        "id": "14d72b0f763ce863",
+        "type": "function",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "name": "prepare status",
+        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\\\w+\\/status$\")[0];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "5b40faaacfd77364"
+            ]
+        ]
+    },
+    {
+        "id": "96dbab7168f8286e",
+        "type": "template",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "name": "template body",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"Name\": \"value\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
+        "output": "str",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "9a33f73fe8d30a5a"
+            ]
+        ]
+    },
+    {
+        "id": "ea13fb3ce140d373",
+        "type": "function",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "name": "setTopic",
+        "func": "msg.topic = msg.topic.replace(\"status\", \"control\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d0a4a3c970c1f0f",
+        "type": "ui_led",
+        "z": "e23b4438cca5e5eb",
+        "g": "441ba1362d002e1d",
+        "order": 2,
+        "group": "b4a04d661a72816d",
+        "width": "2",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 280,
+        "wires": []
+    },
+    {
         "id": "cdcc4ed9e104a50a",
         "type": "mqtt in",
         "z": "3c8d7c4563309a99",
@@ -219,7 +420,7 @@
         "y": 200,
         "wires": [
             [
-                "14d72b0f763ce863"
+                "eb76ddfc7685a929"
             ]
         ]
     },
@@ -322,184 +523,16 @@
         "wires": []
     },
     {
-        "id": "fac3cddf9c9daf69",
-        "type": "debug",
+        "id": "eb76ddfc7685a929",
+        "type": "subflow:e23b4438cca5e5eb",
         "z": "3c8d7c4563309a99",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "5bab2e19ff7e6131",
-        "type": "ui_switch",
-        "z": "3c8d7c4563309a99",
-        "g": "441ba1362d002e1d",
         "name": "",
-        "label": "{{name}}",
-        "tooltip": "",
-        "group": "b4a04d661a72816d",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "passthru": false,
-        "decouple": "true",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 670,
+        "x": 660,
         "y": 200,
         "wires": [
             [
-                "fac3cddf9c9daf69",
-                "96dbab7168f8286e"
-            ]
-        ]
-    },
-    {
-        "id": "14d72b0f763ce863",
-        "type": "function",
-        "z": "3c8d7c4563309a99",
-        "g": "441ba1362d002e1d",
-        "name": "prepare status",
-        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\\\w+\\/status$\")[0];\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 200,
-        "wires": [
-            [
-                "5bab2e19ff7e6131",
-                "4c17a232d27d16ea",
-                "3d0a4a3c970c1f0f"
-            ]
-        ]
-    },
-    {
-        "id": "96dbab7168f8286e",
-        "type": "template",
-        "z": "3c8d7c4563309a99",
-        "g": "441ba1362d002e1d",
-        "name": "template body",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "json",
-        "syntax": "mustache",
-        "template": "{\n    \"Name\": \"value\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
-        "output": "str",
-        "x": 840,
-        "y": 200,
-        "wires": [
-            [
-                "ea13fb3ce140d373"
-            ]
-        ]
-    },
-    {
-        "id": "8d786ba66c2788c9",
-        "type": "debug",
-        "z": "3c8d7c4563309a99",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1100,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "ea13fb3ce140d373",
-        "type": "function",
-        "z": "3c8d7c4563309a99",
-        "g": "441ba1362d002e1d",
-        "name": "setTopic",
-        "func": "msg.topic = msg.topic.replace(\"status\", \"control\")\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 200,
-        "wires": [
-            [
-                "8d786ba66c2788c9",
                 "ddfda6b0d3aea13e"
             ]
         ]
-    },
-    {
-        "id": "4c17a232d27d16ea",
-        "type": "debug",
-        "z": "3c8d7c4563309a99",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 690,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "3d0a4a3c970c1f0f",
-        "type": "ui_led",
-        "z": "3c8d7c4563309a99",
-        "g": "441ba1362d002e1d",
-        "order": 2,
-        "group": "b4a04d661a72816d",
-        "width": "2",
-        "height": "1",
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "0",
-                "valueType": "num"
-            },
-            {
-                "color": "#008000",
-                "value": "1",
-                "valueType": "num"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 670,
-        "y": 140,
-        "wires": []
     }
 ]
