@@ -375,7 +375,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"Name\": {{topic}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n\n}",
+        "template": "{\n    \"Name\": \"value\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n\n}",
         "output": "str",
         "x": 840,
         "y": 200,
