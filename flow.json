@@ -343,7 +343,7 @@
         "z": "3c8d7c4563309a99",
         "g": "441ba1362d002e1d",
         "name": "",
-        "label": "{{topic}}",
+        "label": "{{name}}",
         "tooltip": "",
         "group": "b4a04d661a72816d",
         "order": 3,
@@ -484,12 +484,12 @@
         "colorForValue": [
             {
                 "color": "#ff0000",
-                "value": "1",
+                "value": "0",
                 "valueType": "num"
             },
             {
                 "color": "#008000",
-                "value": "0",
+                "value": "1",
                 "valueType": "num"
             }
         ],
