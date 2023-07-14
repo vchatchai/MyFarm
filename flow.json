@@ -16,6 +16,31 @@
         "env": []
     },
     {
+        "id": "441ba1362d002e1d",
+        "type": "group",
+        "z": "3c8d7c4563309a99",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5bab2e19ff7e6131",
+            "14d72b0f763ce863",
+            "96dbab7168f8286e",
+            "ea13fb3ce140d373",
+            "3d0a4a3c970c1f0f"
+        ],
+        "x": 394,
+        "y": 99,
+        "w": 712,
+        "h": 142
+    },
+    {
         "id": "35ba80d5d4528d19",
         "type": "mqtt-broker",
         "name": "MyFarm",
@@ -316,6 +341,7 @@
         "id": "5bab2e19ff7e6131",
         "type": "ui_switch",
         "z": "3c8d7c4563309a99",
+        "g": "441ba1362d002e1d",
         "name": "",
         "label": "{{topic}}",
         "tooltip": "",
@@ -351,6 +377,7 @@
         "id": "14d72b0f763ce863",
         "type": "function",
         "z": "3c8d7c4563309a99",
+        "g": "441ba1362d002e1d",
         "name": "prepare status",
         "func": "msg.payload = msg.payload.Power ; \nreturn msg;",
         "outputs": 1,
@@ -372,6 +399,7 @@
         "id": "96dbab7168f8286e",
         "type": "template",
         "z": "3c8d7c4563309a99",
+        "g": "441ba1362d002e1d",
         "name": "template body",
         "field": "payload",
         "fieldType": "msg",
@@ -408,6 +436,7 @@
         "id": "ea13fb3ce140d373",
         "type": "function",
         "z": "3c8d7c4563309a99",
+        "g": "441ba1362d002e1d",
         "name": "setTopic",
         "func": "msg.topic = msg.topic.replace(\"status\", \"control\")\nreturn msg;",
         "outputs": 1,
@@ -444,6 +473,7 @@
         "id": "3d0a4a3c970c1f0f",
         "type": "ui_led",
         "z": "3c8d7c4563309a99",
+        "g": "441ba1362d002e1d",
         "order": 1,
         "group": "b4a04d661a72816d",
         "width": 0,
