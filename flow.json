@@ -426,7 +426,7 @@
         "type": "function",
         "z": "3c8d7c4563309a99",
         "name": "function 1",
-        "func": "\nreturn msg.payload.Power;",
+        "func": "msg.payload = msg.payload.Power; \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
