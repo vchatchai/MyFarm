@@ -360,8 +360,8 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "on",
-        "payloadType": "str",
+        "payload": "true",
+        "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
@@ -369,7 +369,8 @@
         "wires": [
             [
                 "9baf1e9a6cbbb54e",
-                "02ac8c276b3d580a"
+                "02ac8c276b3d580a",
+                "5bab2e19ff7e6131"
             ]
         ]
     },
@@ -389,8 +390,8 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "off",
-        "payloadType": "str",
+        "payload": "false",
+        "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
@@ -398,7 +399,8 @@
         "wires": [
             [
                 "9baf1e9a6cbbb54e",
-                "02ac8c276b3d580a"
+                "02ac8c276b3d580a",
+                "5bab2e19ff7e6131"
             ]
         ]
     },
@@ -417,5 +419,38 @@
         "x": 1080,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "5bab2e19ff7e6131",
+        "type": "ui_switch",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "fac3cddf9c9daf69"
+            ]
+        ]
     }
 ]
