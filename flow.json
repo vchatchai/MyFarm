@@ -321,8 +321,8 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "decouple": "false",
+        "passthru": false,
+        "decouple": "true",
         "topic": "topic",
         "topicType": "msg",
         "style": "",
@@ -351,9 +351,7 @@
         "name": "",
         "props": [
             {
-                "p": "enabled",
-                "v": "true",
-                "vt": "bool"
+                "p": "payload"
             },
             {
                 "p": "topic",
@@ -365,7 +363,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "etest",
-        "x": 550,
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 560,
         "y": 200,
         "wires": [
             [
