@@ -804,7 +804,7 @@
         "type": "mqtt in",
         "z": "3c8d7c4563309a99",
         "name": "",
-        "topic": "/topic/node/pump02/status",
+        "topic": "/topic/node/pump03/status",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "35ba80d5d4528d19",
