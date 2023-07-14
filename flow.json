@@ -337,7 +337,7 @@
         "animate": false,
         "className": "",
         "x": 830,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "02ac8c276b3d580a"
@@ -371,6 +371,62 @@
             [
                 "9baf1e9a6cbbb54e",
                 "02ac8c276b3d580a"
+            ]
+        ]
+    },
+    {
+        "id": "98185bedc4d4c081",
+        "type": "ui_button",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "group": "b4a04d661a72816d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button true",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 60,
+        "wires": [
+            [
+                "9baf1e9a6cbbb54e"
+            ]
+        ]
+    },
+    {
+        "id": "1a14f623b8e4b32c",
+        "type": "ui_button",
+        "z": "3c8d7c4563309a99",
+        "name": "",
+        "group": "b4a04d661a72816d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button false",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "9baf1e9a6cbbb54e"
             ]
         ]
     }
