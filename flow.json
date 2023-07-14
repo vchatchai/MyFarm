@@ -336,39 +336,11 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 830,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "92f8e00b4c28da2f",
-        "type": "inject",
-        "z": "3c8d7c4563309a99",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "etest",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 560,
-        "y": 200,
+        "x": 870,
+        "y": 160,
         "wires": [
             [
-                "9baf1e9a6cbbb54e",
-                "02ac8c276b3d580a"
+                "fac3cddf9c9daf69"
             ]
         ]
     },
@@ -417,8 +389,8 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "false",
+        "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
@@ -429,5 +401,21 @@
                 "02ac8c276b3d580a"
             ]
         ]
+    },
+    {
+        "id": "fac3cddf9c9daf69",
+        "type": "debug",
+        "z": "3c8d7c4563309a99",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 160,
+        "wires": []
     }
 ]
