@@ -308,8 +308,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
-        "y": 60,
+        "x": 1040,
+        "y": 80,
         "wires": []
     },
     {
@@ -338,8 +338,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 630,
-        "y": 300,
+        "x": 690,
+        "y": 120,
         "wires": [
             [
                 "fac3cddf9c9daf69",
@@ -377,7 +377,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"Name\": \"value\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n\n}",
+        "template": "{\n    \"Name\": \"value\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
         "output": "str",
         "x": 840,
         "y": 200,
@@ -436,7 +436,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 440,
         "y": 20,
         "wires": []
     },
@@ -466,8 +466,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 630,
-        "y": 400,
+        "x": 670,
+        "y": 280,
         "wires": [
             [
                 "96dbab7168f8286e"
