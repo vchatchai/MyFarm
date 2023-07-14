@@ -194,7 +194,7 @@
         "y": 280,
         "wires": [
             [
-                "49b56851ca77f317"
+                "14d72b0f763ce863"
             ]
         ]
     },
@@ -422,17 +422,17 @@
         ]
     },
     {
-        "id": "49b56851ca77f317",
-        "type": "template",
+        "id": "14d72b0f763ce863",
+        "type": "function",
         "z": "3c8d7c4563309a99",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "{{payload.Power}}",
-        "output": "str",
-        "x": 500,
+        "name": "function 1",
+        "func": "\nreturn msg.payload.Power;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
         "y": 280,
         "wires": [
             [
