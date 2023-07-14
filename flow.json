@@ -172,7 +172,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 250,
-        "y": 200,
+        "y": 140,
         "wires": [
             []
         ]
@@ -191,7 +191,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 250,
-        "y": 280,
+        "y": 200,
         "wires": [
             [
                 "14d72b0f763ce863"
@@ -212,7 +212,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 250,
-        "y": 360,
+        "y": 260,
         "wires": [
             []
         ]
@@ -231,7 +231,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 250,
-        "y": 440,
+        "y": 320,
         "wires": [
             []
         ]
@@ -250,7 +250,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 250,
-        "y": 520,
+        "y": 380,
         "wires": [
             []
         ]
@@ -308,8 +308,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1040,
-        "y": 80,
+        "x": 880,
+        "y": 60,
         "wires": []
     },
     {
@@ -317,7 +317,7 @@
         "type": "ui_switch",
         "z": "3c8d7c4563309a99",
         "name": "",
-        "label": "switch",
+        "label": "{{topic}}",
         "tooltip": "",
         "group": "b4a04d661a72816d",
         "order": 3,
@@ -338,8 +338,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 690,
-        "y": 120,
+        "x": 670,
+        "y": 200,
         "wires": [
             [
                 "fac3cddf9c9daf69",
@@ -363,8 +363,7 @@
         "wires": [
             [
                 "5bab2e19ff7e6131",
-                "4c17a232d27d16ea",
-                "a02a5572d9982f40"
+                "4c17a232d27d16ea"
             ]
         ]
     },
@@ -436,42 +435,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 20,
+        "x": 680,
+        "y": 60,
         "wires": []
-    },
-    {
-        "id": "a02a5572d9982f40",
-        "type": "ui_switch",
-        "z": "3c8d7c4563309a99",
-        "name": "",
-        "label": "switch",
-        "tooltip": "",
-        "group": "b4a04d661a72816d",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 670,
-        "y": 280,
-        "wires": [
-            [
-                "96dbab7168f8286e"
-            ]
-        ]
     }
 ]
