@@ -69,7 +69,9 @@
         "x": 250,
         "y": 280,
         "wires": [
-            []
+            [
+                "02ac8c276b3d580a"
+            ]
         ]
     },
     {
@@ -168,6 +170,22 @@
         "broker": "35ba80d5d4528d19",
         "x": 1080,
         "y": 320,
+        "wires": []
+    },
+    {
+        "id": "02ac8c276b3d580a",
+        "type": "debug",
+        "z": "3c8d7c4563309a99",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 380,
         "wires": []
     }
 ]
