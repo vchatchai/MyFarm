@@ -379,7 +379,7 @@
         "z": "3c8d7c4563309a99",
         "g": "441ba1362d002e1d",
         "name": "prepare status",
-        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\/status$\");\n\nreturn msg;",
+        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\w|\\d+\\/status$\");\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
