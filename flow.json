@@ -321,8 +321,8 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "passthru": false,
-        "decouple": "true",
+        "passthru": true,
+        "decouple": "false",
         "topic": "topic",
         "topicType": "msg",
         "style": "",
@@ -339,9 +339,7 @@
         "x": 830,
         "y": 180,
         "wires": [
-            [
-                "02ac8c276b3d580a"
-            ]
+            []
         ]
     },
     {
@@ -398,7 +396,8 @@
         "y": 60,
         "wires": [
             [
-                "9baf1e9a6cbbb54e"
+                "9baf1e9a6cbbb54e",
+                "02ac8c276b3d580a"
             ]
         ]
     },
@@ -426,7 +425,8 @@
         "y": 120,
         "wires": [
             [
-                "9baf1e9a6cbbb54e"
+                "9baf1e9a6cbbb54e",
+                "02ac8c276b3d580a"
             ]
         ]
     }
