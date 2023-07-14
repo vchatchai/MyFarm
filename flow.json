@@ -272,8 +272,8 @@
         "lineStickerId": 1,
         "disabledPushNotification": false,
         "hasToken": true,
-        "x": 1060,
-        "y": 500,
+        "x": 1120,
+        "y": 520,
         "wires": [
             []
         ]
@@ -292,8 +292,8 @@
         "correl": "",
         "expiry": "",
         "broker": "35ba80d5d4528d19",
-        "x": 1200,
-        "y": 680,
+        "x": 1240,
+        "y": 280,
         "wires": []
     },
     {
@@ -308,8 +308,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1200,
-        "y": 160,
+        "x": 820,
+        "y": 60,
         "wires": []
     },
     {
@@ -338,7 +338,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 810,
+        "x": 650,
         "y": 200,
         "wires": [
             [
@@ -358,7 +358,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
+        "x": 500,
         "y": 200,
         "wires": [
             [
@@ -377,8 +377,8 @@
         "syntax": "mustache",
         "template": "{\n    \"Name\": {{topic}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n\n}",
         "output": "str",
-        "x": 940,
-        "y": 340,
+        "x": 840,
+        "y": 200,
         "wires": [
             [
                 "ea13fb3ce140d373"
@@ -398,8 +398,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1220,
-        "y": 400,
+        "x": 1240,
+        "y": 200,
         "wires": []
     },
     {
@@ -413,11 +413,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
-        "y": 280,
+        "x": 1020,
+        "y": 200,
         "wires": [
             [
-                "8d786ba66c2788c9"
+                "8d786ba66c2788c9",
+                "ddfda6b0d3aea13e"
             ]
         ]
     }
