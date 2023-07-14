@@ -192,9 +192,7 @@
         "x": 250,
         "y": 280,
         "wires": [
-            [
-                "f1bc81f782970141"
-            ]
+            []
         ]
     },
     {
@@ -340,23 +338,6 @@
         "className": "",
         "x": 830,
         "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f1bc81f782970141",
-        "type": "function",
-        "z": "3c8d7c4563309a99",
-        "name": "function 1",
-        "func": "\nreturn true;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 300,
         "wires": [
             []
         ]
