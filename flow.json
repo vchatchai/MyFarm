@@ -298,7 +298,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"Name\": {{payload}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
+        "template": "{\n    \"Name\": {{topic}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
         "output": "str",
         "x": 820,
         "y": 360,
@@ -392,8 +392,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
-        "y": 100,
+        "x": 820,
+        "y": 140,
         "wires": []
     },
     {
