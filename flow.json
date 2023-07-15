@@ -37,21 +37,21 @@
         ],
         "out": [
             {
-                "x": 940,
+                "x": 1100,
                 "y": 340,
                 "wires": [
                     {
-                        "id": "ea13fb3ce140d373",
+                        "id": "96dbab7168f8286e",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 940,
-                "y": 260,
+                "x": 1100,
+                "y": 240,
                 "wires": [
                     {
-                        "id": "ea13fb3ce140d373",
+                        "id": "96dbab7168f8286e",
                         "port": 0
                     }
                 ]
@@ -85,49 +85,10 @@
             "9a33f73fe8d30a5a",
             "1cb258ec5d3e4dd6"
         ],
-        "x": 174,
-        "y": 219,
-        "w": 712,
-        "h": 142
-    },
-    {
-        "id": "5b40faaacfd77364",
-        "type": "junction",
-        "z": "e23b4438cca5e5eb",
-        "g": "441ba1362d002e1d",
-        "x": 380,
-        "y": 300,
-        "wires": [
-            [
-                "5bab2e19ff7e6131"
-            ]
-        ]
-    },
-    {
-        "id": "f02fc8323b4ab41e",
-        "type": "junction",
-        "z": "e23b4438cca5e5eb",
-        "g": "441ba1362d002e1d",
-        "x": 520,
-        "y": 320,
-        "wires": [
-            [
-                "96dbab7168f8286e"
-            ]
-        ]
-    },
-    {
-        "id": "9a33f73fe8d30a5a",
-        "type": "junction",
-        "z": "e23b4438cca5e5eb",
-        "g": "441ba1362d002e1d",
-        "x": 720,
-        "y": 320,
-        "wires": [
-            [
-                "ea13fb3ce140d373"
-            ]
-        ]
+        "x": 194,
+        "y": 199,
+        "w": 732,
+        "h": 267
     },
     {
         "id": "35ba80d5d4528d19",
@@ -299,11 +260,11 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 450,
-        "y": 320,
+        "x": 470,
+        "y": 360,
         "wires": [
             [
-                "f02fc8323b4ab41e"
+                "ea13fb3ce140d373"
             ]
         ]
     },
@@ -319,11 +280,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 320,
+        "x": 280,
+        "y": 360,
         "wires": [
             [
-                "5b40faaacfd77364"
+                "5bab2e19ff7e6131"
             ]
         ]
     },
@@ -339,12 +300,10 @@
         "syntax": "mustache",
         "template": "{\n    \"Name\": {{name}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
         "output": "str",
-        "x": 620,
-        "y": 320,
+        "x": 820,
+        "y": 360,
         "wires": [
-            [
-                "9a33f73fe8d30a5a"
-            ]
+            []
         ]
     },
     {
@@ -359,10 +318,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 320,
+        "x": 640,
+        "y": 360,
         "wires": [
-            []
+            [
+                "96dbab7168f8286e"
+            ]
         ]
     },
     {
@@ -394,7 +355,7 @@
         "showGlow": true,
         "name": "",
         "x": 450,
-        "y": 260,
+        "y": 240,
         "wires": []
     },
     {
@@ -409,8 +370,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 260,
+        "x": 280,
+        "y": 240,
         "wires": [
             [
                 "3d0a4a3c970c1f0f"
