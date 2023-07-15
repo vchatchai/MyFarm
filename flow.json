@@ -298,7 +298,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"Name\": {{name}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
+        "template": "{\n    \"Name\": {{flow.name}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
         "output": "str",
         "x": 820,
         "y": 360,
@@ -322,7 +322,8 @@
         "y": 360,
         "wires": [
             [
-                "96dbab7168f8286e"
+                "96dbab7168f8286e",
+                "73e5b1dc9eefa26e"
             ]
         ]
     },
@@ -377,6 +378,23 @@
                 "3d0a4a3c970c1f0f"
             ]
         ]
+    },
+    {
+        "id": "73e5b1dc9eefa26e",
+        "type": "debug",
+        "z": "e23b4438cca5e5eb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 100,
+        "wires": []
     },
     {
         "id": "cdcc4ed9e104a50a",
