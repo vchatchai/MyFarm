@@ -274,7 +274,7 @@
         "z": "e23b4438cca5e5eb",
         "g": "441ba1362d002e1d",
         "name": "setPower",
-        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\\\w+\\/status$\")[0];\nmsg.name = msg.name.match(\"^\\\\w+\");\nflow.name = msg.name;\n\nreturn msg;",
+        "func": "msg.payload = msg.payload.Power ; \nmsg.name = msg.topic.match(\"\\\\w+\\/status$\")[0];\nmsg.name = msg.name.match(\"^\\\\w+\")[0];\nflow.name = msg.name;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
