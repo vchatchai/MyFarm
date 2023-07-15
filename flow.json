@@ -298,7 +298,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"Name\": {{name}},\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
+        "template": "{\n    \"Name\": \"{{name}}\",\n    \"NodeID\": \"Node-RED\",\n    \"Power\": {{payload}}\n}",
         "output": "str",
         "x": 820,
         "y": 360,
